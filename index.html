@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>POS Toko Roti Solo Satu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>
+            🍞 Roti Solo Satu
+        </h2>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-cash-register"></i>
+                Kasir
+            </li>
+
+            <li>
+                <i class="fa-solid fa-bread-slice"></i>
+                Produk
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-column"></i>
+                Laporan
+            </li>
+
+            <li>
+                <i class="fa-solid fa-book"></i>
+                Katalog
+            </li>
+
+            <li>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <header>
+            <button id="menuBtn" class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <h1>
+                Dashboard
+            </h1>
+
+            <div class="user">
+
+                Halo, Admin 👋
+
+            </div>
+            
+
+        </header>
+
+        <!-- Card -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Total Penjualan</h3>
+
+                <h2>Rp 2.450.000</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Total Transaksi</h3>
+
+                <h2>127</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Produk</h3>
+
+                <h2>35</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Kas Hari Ini</h3>
+
+                <h2>Rp 5.600.000</h2>
+
+            </div>
+
+        </section>
+
+        <!-- Grafik -->
+
+        <section class="panel">
+
+            <h2>Grafik Penjualan 7 Hari</h2>
+
+            <canvas id="salesChart"></canvas>
+
+        </section>
+
+        <!-- Produk Expired -->
+
+        <section class="panel">
+
+            <h2>Produk Hampir Return</h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Produk</th>
+                    <th>Masuk</th>
+                    <th>Expired</th>
+                    <th>Status</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>Roti Coklat</td>
+                    <td>01 Juli</td>
+                    <td>08 Juli</td>
+                    <td class="danger">Return</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Donat Keju</td>
+                    <td>04 Juli</td>
+                    <td>11 Juli</td>
+                    <td class="warning">2 Hari Lagi</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Roti Sobek</td>
+                    <td>06 Juli</td>
+                    <td>13 Juli</td>
+                    <td class="success">Aman</td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
