@@ -1,3 +1,9 @@
+if(localStorage.getItem("login") !== "true"){
+
+    window.location.href = "login.html";
+
+}
+
 // ===============================
 // GRAFIK PENJUALAN 7 HARI
 // ===============================
@@ -292,3 +298,19 @@ overlay.addEventListener("click", ()=>{
     overlay.classList.remove("show");
 
 });
+
+const logoutBtn = document.getElementById("logoutBtn");
+
+logoutBtn.addEventListener("click", function(){
+
+    localStorage.removeItem("login");
+
+    window.location.href = "login.html";
+
+});
+
+const role = localStorage.getItem("role");
+const username = localStorage.getItem("username");
+
+document.getElementById("userInfo").innerHTML =
+`Halo, ${username} 👋`;
