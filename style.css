@@ -292,3 +292,209 @@ header h1{
 }
 
 }
+
+/* ===========================
+   MOBILE MENU
+=========================== */
+
+.menu-btn{
+    display:none;
+    background:#D9A441;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* Overlay */
+
+.overlay{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.4);
+    z-index:998;
+}
+
+.overlay.show{
+    display:block;
+}
+
+/* ===========================
+   HP
+=========================== */
+
+@media (max-width:768px){
+
+.sidebar{
+
+    position:fixed;
+    left:-260px;
+    top:0;
+    width:250px;
+    height:100vh;
+    transition:.3s;
+    z-index:999;
+
+}
+
+.sidebar.show{
+
+    left:0;
+
+}
+
+.main-content{
+
+    margin-left:0;
+    width:100%;
+
+}
+
+.menu-btn{
+
+    display:block;
+
+}
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+table{
+
+    display:block;
+    overflow-x:auto;
+
+}
+
+canvas{
+
+    height:250px !important;
+
+}
+
+.user{
+
+    display:none;
+
+}
+
+}
+
+/* ==========================
+        LOGIN
+========================== */
+
+.login-page{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#FFF8E8;
+
+}
+
+.login-box{
+
+    width:380px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+    text-align:center;
+
+}
+
+.logo{
+
+    font-size:60px;
+    margin-bottom:15px;
+
+}
+
+.login-box h2{
+
+    color:#6F4E37;
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    color:#777;
+    margin-bottom:25px;
+
+}
+
+.input-box{
+
+    display:flex;
+    align-items:center;
+    background:#f5f5f5;
+    border-radius:10px;
+    padding:12px 15px;
+    margin-bottom:18px;
+
+}
+
+.input-box i{
+
+    color:#6F4E37;
+    margin-right:10px;
+
+}
+
+.input-box input{
+
+    border:none;
+    outline:none;
+    background:none;
+    width:100%;
+    font-size:15px;
+
+}
+
+.login-box button{
+
+    width:100%;
+    padding:13px;
+    border:none;
+    background:#D9A441;
+    color:white;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.login-box button:hover{
+
+    background:#B07D45;
+
+}
+
+.error{
+
+    color:red;
+    margin-top:15px;
+    font-size:14px;
+
+}
